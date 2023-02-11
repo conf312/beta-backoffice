@@ -50,5 +50,5 @@ global:
     templates:
       path: "C:\\Users\\venh\\IdeaProjects\\admin\\src\\main\\resources\\templates\\mail\\"
 
-  jasypt:
-    key: ${jasypt_key}
+jasypt:
+  key: ${jasypt_key}
