@@ -6,11 +6,10 @@ spring:
       max-file-size: 10MB
       max-request-size: 10MB
   thymeleaf:
-    cache: false
-    prefix: file:src/main/resources/templates/
+    prefix: classpath:/templates/
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: ENC(gmJ91EGjOTYWelOW8r32BvCH/Zd05pRgWQ1q6UUl2m2BIdGOqS1dhZKQf/lNjDcZ/bQ8fSVGau3939DIZIBe/A==)
+    url: jdbc:mysql://host.docker.internal:3306/beta_admin
     username: admin
     password: ENC(CY/t4Xu2Au2cNweK2LrnRQ==)
   jpa:
