@@ -26,13 +26,13 @@ public class AttachFileService {
 
         List<AttachFile> attachFileList = fileUtil.upload(multipartRequest, targetTable, targetId, id);
 
-        if (attachFileList.size() < 1) return false;
+        if (attachFileList.size() < 1)
+            return false;
 
-        if (id != null) {
+        if (id != null)
             return updateFileInfo(attachFileList.get(0)) > 0;
-        } else {
+        else
             return attachFileRepository.saveAll(attachFileList).size() > 0;
-        }
     }
 
     public AttachFile.Response findById(Long id) {
